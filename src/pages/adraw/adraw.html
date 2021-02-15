@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>Draw Update</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <br>
+  <ion-item>
+    <ion-label color="primary" stacked>Title</ion-label>
+    <ion-input type="text" placeholder="text"></ion-input>
+  </ion-item>
+
+  <br>
+  <div Align="center">
+    <button ion-button clear icon-start (click)="getImage()">
+      <ion-icon name="add-circle"></ion-icon>
+      Add Image
+    </button>
+  </div>
+  <p Align="center"><img [src]='myPhoto' [hidden]="!myPhoto"></p>
+
+  <br>
+  <div Align="center">
+    <button ion-button class="login-btn" type="submit" color="primary">Post</button>
+  </div>
+
+</ion-content>

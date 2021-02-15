@@ -1,0 +1,25 @@
+page-welcome {
+
+    .bg-image{
+        background-image: url('../assets/img/background.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    ion-card.card{
+        box-shadow: none;
+        background: rgba(0,0,0,0.5);
+        border-radius: 5px;
+    }
+    .item{
+        margin-bottom: 10px;
+        background: rgba(255,255,255,0.5);
+        border: medium none;
+        border-radius: 5px;
+    }
+    .img{
+        background:  rgba(0, 0, 0, 0);
+    }
+
+}

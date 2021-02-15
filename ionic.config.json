@@ -1,0 +1,7 @@
+{
+  "name": "UniversityGames",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

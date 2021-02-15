@@ -1,0 +1,39 @@
+
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>Admin Panel</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card color="danger">
+    <ion-card-header>
+      Admin
+    </ion-card-header>
+  
+    <ion-list>
+      <button ion-item (click)="click1()">
+        <ion-icon name="paper" item-start></ion-icon>
+        News Update
+      </button>
+  
+      <button ion-item (click)="click2()">
+        <ion-icon name="body" item-start></ion-icon>
+        Event Update
+      </button>
+  
+      <button ion-item (click)="click3()">
+        <ion-icon name="medal" item-start></ion-icon>
+        Rank Update
+      </button>
+  
+      <button ion-item (click)="click4()">
+        <ion-icon name="people" item-start></ion-icon>
+        Draw Update
+      </button>
+  
+    </ion-list>
+  </ion-card>
+
+</ion-content>

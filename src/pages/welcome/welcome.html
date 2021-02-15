@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar color="light">
+    <br><h2 Align="center">Inter University <br>Games</h2>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg-image">
+  
+<!--   <div Align="center">
+    <ion-img class="img" width="120" height="120" src="assets/img/app.png"></ion-img>
+  </div> -->
+ 
+  <ion-card>
+
+    <ion-card-content>
+
+      <form #login="ngForm">
+
+        <ion-item>
+          <ion-label floating>UserName</ion-label>
+          <ion-input type="text" required [(ngModel)]="userName" ngControl="title" name="username"></ion-input>
+        </ion-item>
+
+
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input [type]="passwordType" required [(ngModel)]="password" (keyup.enter)="submit"
+            ngControl="description" name="password">
+          </ion-input>
+          <button ion-button clear [color]="passwordShown === true ? 'gray' : 'dark'" type="button"
+            (click)="togglePassword()" item-right>
+            <ion-icon name="eye"> </ion-icon>
+          </button>
+        </ion-item>
+        <br>
+
+        <!-- <button ion-button round full class="login-btn" type="submit" color="primary" (click)="onSubmit(login)">Sign In</button> -->
+        <button ion-button round full class="login-btn" type="submit" color="primary" (click)="log()">Sign In</button>
+        <br>
+        <div Align="center">
+          Don't have an account?
+          <p color="primary" (click)="load()">Create an account</p>
+        </div>
+
+        <div>
+          <button ion-button small class="login-btn" type="submit" color="primary" (click)="loadA()">Admin</button>
+        </div>
+
+
+        <div *ngIf="showErrorMessage" class="alert">
+          <br>
+          <a href="#" class="close" alert>&times;</a>
+          <strong>Error!</strong> <br>Username or password incorrect.
+
+        </div>
+
+
+
+      </form>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

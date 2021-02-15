@@ -1,0 +1,58 @@
+<!--
+  Generated template for the SettingsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Settings</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card>
+    <ion-card-header>
+      Settings
+    </ion-card-header>
+  
+    <ion-list>
+      <ion-item>
+        <ion-label>Notifications</ion-label>
+        <ion-toggle disabled checked="false"></ion-toggle>
+      </ion-item>
+
+      <br>
+  
+      <button ion-item (click)=load()>
+        <ion-icon name="paper" item-start></ion-icon>
+        Feedback
+      </button>
+  
+      <button ion-item (click)=load1()>
+        <ion-icon name="lock" item-start></ion-icon>
+        Privacy & Policy
+      </button>
+  
+      <button ion-item (click)=load2()>
+        <ion-icon name="paper-plane" item-start></ion-icon>
+        Term of Service
+      </button>
+  
+      <button ion-item (click)=load3()>
+        <ion-icon name="man" item-start></ion-icon>
+        Inter University Games
+      </button>
+
+      <br>
+  
+      <button ion-item (click)=showConfirm()>
+        <ion-icon name="power" item-start></ion-icon>
+        Log out
+      </button>
+  
+    </ion-list>
+  </ion-card>
+
+</ion-content>
